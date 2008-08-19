@@ -1,0 +1,11 @@
+DESCRIPTION="Qt4 DBus accessibility poker"
+HOMEPAGE="http://labs.trolltech.com/page/Projects/Accessibility/IAPoke"
+SVN_URI="svn://labs.trolltech.com/svn/accessibility/${PN}"
+SVN_BRANCH=/
+SVN_DATE=${PV}
+
+inherit qt4-qmake svn
+
+src_install() {
+	dobin ${B}/iapoke.exe
+}
